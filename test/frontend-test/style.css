@@ -1,0 +1,14 @@
+.jumbotron {
+    background-color: darkturquoise;
+}
+
+select.select {
+    text-align: center;
+}
+
+.form-element {
+    width: 200px;
+    height: 40px;
+    font-size: 16pt;
+    border-radius: 10px;
+}
