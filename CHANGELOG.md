@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.0 [2024-11-27]
+### New Features
+* `build.sh` file for automatic installation
+
 ## 1.1.0 [2024-11-27]
 ### New Features
 * Webpage alerts user with error message for different errors:
