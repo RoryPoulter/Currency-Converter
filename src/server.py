@@ -61,14 +61,8 @@ def form():
         amount = request.form['amount']
         result = convert(start_curr, final_curr, amount)
         if isinstance(result, int):
-            ERRORS = {
-                1: "Missing amount!",
-                2: "Invalid amount: must be a number!",
-                3: "Invalid amount: must be greater than 0!",
-                4: "Converting to and from same currency!"
-                }
-            return jsonify({'error': ERRORS[result]})
-        return jsonify({'output' : result})
+            return jsonify({'error': result})
+        return jsonify({'output': result})
     return render_template('index.html')
 
 
