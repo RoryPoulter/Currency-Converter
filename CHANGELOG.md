@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.2.1 [2024-11-28]
+### Bug Fixes
+* Added `number` type to amount input to remove unnecessary input verification
+
+### Other Changes
+* New UI
+
 ## 1.2.0 [2024-11-28]
 ### New Features
 * `build.sh` file for automatic installation
