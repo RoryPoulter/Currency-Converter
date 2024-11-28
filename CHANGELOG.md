@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 1.2.0 [2024-11-27]
+## 1.2.0 [2024-11-28]
 ### New Features
 * `build.sh` file for automatic installation
 
