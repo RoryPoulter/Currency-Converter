@@ -1,8 +1,5 @@
 const ERROR_MESSAGES = {
-    1: "Missing amount!",
-    2: "Invalid amount: must be a number!",
-    3: "Invalid amount: must be greater than 0!",
-    4: "Converting to and from same currency!"
+    1: "Converting to and from same currency!"
 };
 
 

@@ -10,11 +10,8 @@ app = Flask(__name__)
 
 def convert(start_curr: str, final_curr: str, amount: str) -> str | int:
     """Converts between the two currencies.     
-    Error codes:    
-    1: Amount input missing    
-    2: String input for amount  
-    3: Amount below or equal to zero        
-    4: Start and final currencies are the same
+    Error codes:        
+    1: Start and final currencies are the same
 
     Args:
         start_curr (str): The initial currency
@@ -24,16 +21,8 @@ def convert(start_curr: str, final_curr: str, amount: str) -> str | int:
     Returns:
         str | int: A string of the converted amount if successful or integer error code if failed.
     """
-    if not amount:
-        return 1
-    try:
-        amount = float(amount)
-    except ValueError:
-        return 2
-    if amount <= 0:
-        return 3
     if start_curr == final_curr:
-        return 4
+        return 1
     with open("test/server-test/static/exchange_rates_test_file.json", "r", encoding="UTF-8") as f:
         data = json.load(f)
     result = amount * data["rates"][final_curr] / data["rates"][start_curr]

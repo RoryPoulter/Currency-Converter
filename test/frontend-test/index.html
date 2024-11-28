@@ -22,28 +22,27 @@
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col-md-6">
-                            <select name="start_currency" id="start_currency" class="form-element select">
+                            <input type="number" step="any" min="0" id="amount" placeholder="1.00" name="amount" class="form-element-left" required>
+                        </div>
+                        <div class="col-md-6">
+                            <select name="start_currency" id="start_currency" class="form-element-right select">
                                 <option value="AED">AED</option>
                                 <option value="AFN">AFN</option>
                             </select>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" id="amount" placeholder="1.00" name="amount" class="form-element">
                         </div>
                     </div><br>
                     <div class="row">
                         <div class="col-md-6">
-                            <select name="final_currency" id="final_currency" class="form-element select">
+                            <div id="output" class="form-element-left"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <select name="final_currency" id="final_currency" class="form-element-right select">
                                 <option value="AED">AED</option>
                                 <option value="AFN">AFN</option>
                             </select>
                         </div>
-                        <div class="col-md-6">
-                            <div id="output" class="form-element"></div>
-                        </div>
                     </div><br> 
                 </div>
-                
                 <input type="submit" value="Convert" class="form-element">
             </form>
         </div>
