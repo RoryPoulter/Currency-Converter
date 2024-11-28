@@ -18,17 +18,32 @@
         </div>
         <div class="container">
             <h3>Real-time currency conversion for over 160 currencies</h3>
-            <form>                
-                <select name="start_currency" id="start_currency" class="form-element select">
-                    <option value="AED">AED</option>
-                    <option value="AFN">AFN</option>
-                </select>
-                <input type="text" id="amount" placeholder="1.00" name="amount" class="form-element"><br><br>
-                <select name="final_currency" id="final_currency" class="form-element select">
-                    <option value="AED">AED</option>
-                    <option value="AFN">AFN</option>
-                </select>
-                <br><br>
+            <form id="form">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <select name="start_currency" id="start_currency" class="form-element select">
+                                <option value="AED">AED</option>
+                                <option value="AFN">AFN</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="amount" placeholder="1.00" name="amount" class="form-element">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <select name="final_currency" id="final_currency" class="form-element select">
+                                <option value="AED">AED</option>
+                                <option value="AFN">AFN</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="output" class="form-element"></div>
+                        </div>
+                    </div><br> 
+                </div>
+                
                 <input type="submit" value="Convert" class="form-element">
             </form>
         </div>

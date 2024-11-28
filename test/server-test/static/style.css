@@ -12,3 +12,7 @@ select.select {
     font-size: 16pt;
     border-radius: 10px;
 }
+
+#output {
+    border: black solid 2px;
+}
