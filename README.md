@@ -10,7 +10,7 @@ Webpage for converting between currencies. Uses a Flask backend and uses an API 
 ```bash 
 pip install -r path/to/requirements.txt
 ```
-* Create `.env` file and store API key:
+* Create `.env` file in the main directory and store API key:
 ```bash
 echo "ER_API_KEY=<your key here>" >> .env
 ```
