@@ -1,5 +1,9 @@
 # Currency-Converter
 
+[![GitHub Release](https://img.shields.io/github/release/RoryPoulter/Currency-Converter.svg?style=flat)]()
+![GitHub License](https://img.shields.io/github/license/RoryPoulter/Currency-Converter)
+[![GitHub last commit](https://img.shields.io/github/last-commit/RoryPoulter/Currency-Converter.svg?style=flat)]()
+
 Webpage for converting between currencies. Uses a Flask backend and uses an API to fetch current conversion rates.
 
 ## Installation
