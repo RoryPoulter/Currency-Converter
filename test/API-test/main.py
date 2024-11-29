@@ -12,6 +12,7 @@ if __name__ == "__main__":
     load_dotenv(dotenv_path=dotenv_path)
 
     ER_API_KEY = os.getenv("ER_API_KEY")
-    with urllib.request.urlopen("https://api.exchangeratesapi.io/v1/latest?access_key="+ER_API_KEY) as url:
+    BASE_URL = "https://api.exchangeratesapi.io/v1/latest?access_key="
+    with urllib.request.urlopen(BASE_URL+ER_API_KEY) as url:
         data = json.load(url)
         print(data)
