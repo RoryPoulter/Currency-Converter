@@ -25,6 +25,7 @@ def convert(start_curr: str, final_curr: str, amount: str) -> str | int:
         return 1
     with open("test/server-test/static/exchange_rates_test_file.json", "r", encoding="UTF-8") as f:
         data = json.load(f)
+    amount = float(amount)
     result = amount * data["rates"][final_curr] / data["rates"][start_curr]
     return str(result)
 
