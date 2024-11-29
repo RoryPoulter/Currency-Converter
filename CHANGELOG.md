@@ -5,9 +5,6 @@
 * Fix misaligned output text
 * Add type casting to amount before converting
 
-### Other Changes
-* Add Python-App workflow
-
 ## 1.2.1 [2024-11-28]
 ### Bug Fixes
 * Added `number` type to amount input to remove unnecessary input verification
