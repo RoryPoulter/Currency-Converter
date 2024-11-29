@@ -30,9 +30,11 @@ def convert(start_curr: str, final_curr: str, amount: str) -> str | int:
 
     dotenv_path = Path("../.env")
     load_dotenv(dotenv_path=dotenv_path)
-    ER_API_KEY = os.getenv("ER_API_KEY")
-    with urllib.request.urlopen("https://api.exchangeratesapi.io/v1/latest?access_key="+ER_API_KEY) as url:
+    er_api_key = os.getenv("ER_API_KEY")
+    base_url = "https://api.exchangeratesapi.io/v1/latest?access_key="
+    with urllib.request.urlopen(base_url+er_api_key) as url:
         data = json.load(url)
+    amount = float(amount)
     result = amount * data["rates"][final_curr] / data["rates"][start_curr]
     return str(result)
 
