@@ -3,11 +3,11 @@
     padding: 10px;
 }
 
-.form-element-left, .form-element-right, .form-element {
-    width: 229px;
+.form-element-left, .form-element-right, .form-element-center {
+    width: 221px;
     height: 40px;
     font-size: 12pt;
-    border-width: 1px;
+    border: rgb(0, 135, 137) solid 2px;
 }
 
 .form-element-left {
@@ -20,11 +20,22 @@
     border-top-right-radius: 10px;
 }
 
-.form-element {
+.form-element-center {
     border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.form-button {
+    background-color: rgb(7, 194, 198);
+    font-weight: bold;
+}
+
+.form-button:hover {
+    background-color: rgb(8, 225, 228);
 }
 
 #output {
-    border: black solid 1px;
+    border: rgb(0, 135, 137) solid 2px;
     line-height: 40px;
 }
