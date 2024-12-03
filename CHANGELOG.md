@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.3.0 [2024-12-03]
+### New Features
+* Shows conversion between both currencies
+* Results are rounded to 3 decimal places
+* New UI with mobile support
+
 ## 1.2.2 [2024-11-29]
 ### Bug Fixes
 * Fix misaligned output text

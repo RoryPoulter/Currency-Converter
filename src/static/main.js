@@ -15,10 +15,12 @@ $(document).ready(function() {
         url : '/'
         })
         .done(function(data){
-            if (data.output == null) {
+            if (data.error != null) {
                 alert(ERROR_MESSAGES[data.error]);
             } else {
                 $('#output').text(data.output).show();
+                $('#start_to_final').text(data.start_to_final).show();
+                $('#final_to_start').text(data.final_to_start).show();
             }
         });
         e.preventDefault();
