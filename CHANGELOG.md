@@ -3,6 +3,9 @@
 ## 1.3.0 [2024-12-03]
 ### New Features
 * Shows conversion between both currencies
+
+![image](https://github.com/user-attachments/assets/7e343b72-6020-4fe4-836f-43784ed1ffc2)
+
 * Results are rounded to 3 decimal places
 * New UI with mobile support
 
