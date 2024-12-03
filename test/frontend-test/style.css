@@ -10,16 +10,6 @@
     border: rgb(0, 135, 137) solid 2px;
 }
 
-.form-element-left {
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.form-element-right {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
 .form-element-center {
     border-radius: 10px;
     text-align: center;
@@ -38,4 +28,33 @@
 #output {
     border: rgb(0, 135, 137) solid 2px;
     line-height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    /* ?Desktop */
+    .form-element-left {
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    .form-element-right {
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    /* ?Mobile */
+    .form-element-left {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .form-element-right {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top: 0px;
+    }
+    
 }
