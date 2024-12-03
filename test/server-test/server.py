@@ -17,6 +17,7 @@ def convert(start_curr: str, final_curr: str, amount: str, dplaces: int = 3) -> 
         start_curr (str): The initial currency
         final_curr (str): The final currency
         amount (str): The amount to be converted
+        dplaces (int, optional): The number of decimal places for the result. Defaults to 3.
 
     Returns:
         str | int: A string of the converted amount if successful or integer error code if failed.
@@ -28,7 +29,7 @@ def convert(start_curr: str, final_curr: str, amount: str, dplaces: int = 3) -> 
     amount = float(amount)
     result = amount * data["rates"][final_curr] / data["rates"][start_curr]
     return str(round(result, dplaces))
-    
+
 
 @app.route("/", methods=["GET", "POST"])
 def form():
